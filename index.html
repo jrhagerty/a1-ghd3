@@ -68,15 +68,37 @@
       .attr("x1", 500)
       .attr("y1", 120)
       .attr("x2", 580)
-      .attr("y2", 85)
+      .attr("y2", 90)
       .attr("stroke", "green")
       .attr("stroke-width", 6);
+    
+    // Mouth
+    svg.append("line")
+      .attr("x1", 350)
+      .attr("y1", 370)
+      .attr("x2", 610)
+      .attr("y2", 370)
+      .attr("stroke", "black")
+      .attr("stroke-width", 12);
 
     // Add Polygons
     // Leaf
     svg.append("polygon")
       .attr("points", "550, 80 600, 80 600, 100")
       .attr("fill", "green");
+    
+    // Left eye
+    svg.append("polygon")
+      .attr("points", "340, 270 390, 190 450, 270")
+      
+
+    // Right eye
+    svg.append("polygon")
+      .attr("points", "510, 270 570, 190 620, 270")
+    
+    // Nose
+    svg.append("polygon")
+      .attr("points", "480, 280 510, 340 450, 340")
 
   </script>
 </body>
