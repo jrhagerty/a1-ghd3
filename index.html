@@ -16,6 +16,7 @@
       .attr("height", 540);
       
     // Add Rectangles
+    // Background
     svg.append("rect")
       .attr("x", 0)
       .attr("y", 0)
@@ -23,12 +24,43 @@
       .attr("height", 540)
       .attr("fill", "#7D4A00");
 
-    // Add Circles
+    // Ground
+    svg.append("rect")
+      .attr("x", 0)
+      .attr("y", 440)
+      .attr("width", 960)
+      .attr("height", 100)
+      .attr("fill", "#4a3204");
+
+    // Stem
+    svg.append("rect")
+      .attr("x", 450)
+      .attr("y", 100)
+      .attr("width", 60)
+      .attr("height", 90)
+      .attr("fill", "#030d01");
+
+    // Circles
+    // Center
     svg.append("circle")
-      .attr("cx", 200)
-      .attr("cy", 200)
-      .attr("r", 100)
-      .attr("fill", "red");
+      .attr("cx", 480)
+      .attr("cy", 300)
+      .attr("r", 170)
+      .attr("fill", "orange");
+    
+    // Left
+    svg.append("circle")
+      .attr("cx", 420)
+      .attr("cy", 300)
+      .attr("r", 170)
+      .attr("fill", "orange");
+
+    // Right
+    svg.append("circle")
+      .attr("cx", 540)
+      .attr("cy", 300)
+      .attr("r", 170)
+      .attr("fill", "orange");
 
     // Add Lines
     svg.append("line")
