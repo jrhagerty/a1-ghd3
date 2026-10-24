@@ -46,35 +46,37 @@
       .attr("cx", 480)
       .attr("cy", 300)
       .attr("r", 170)
-      .attr("fill", "orange");
+      .attr("fill", "#f28c28");
     
     // Left
     svg.append("circle")
       .attr("cx", 420)
       .attr("cy", 300)
       .attr("r", 170)
-      .attr("fill", "orange");
+      .attr("fill", "#db771f");
 
     // Right
     svg.append("circle")
       .attr("cx", 540)
       .attr("cy", 300)
       .attr("r", 170)
-      .attr("fill", "orange");
+      .attr("fill", "#db771f");
 
     // Add Lines
+    // Vine
     svg.append("line")
-      .attr("x1", 100)
-      .attr("y1", 200)
-      .attr("x2", 300)
-      .attr("y2", 400)
-      .attr("stroke", "black")
-      .attr("stroke-width", 5);
+      .attr("x1", 500)
+      .attr("y1", 120)
+      .attr("x2", 580)
+      .attr("y2", 85)
+      .attr("stroke", "green")
+      .attr("stroke-width", 6);
 
     // Add Polygons
+    // Leaf
     svg.append("polygon")
-      .attr("points", "100, 200 300, 300 200, 100")
-      .attr("fill", "purple");
+      .attr("points", "550, 80 600, 80 600, 100")
+      .attr("fill", "green");
 
   </script>
 </body>
