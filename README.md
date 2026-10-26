@@ -1,16 +1,16 @@
-# Assignement 1 - D3
+# Assignment 1 - D3
 
 ## Description
 I created a jack-o-lantern with d3.js. I used rectangles, circles, lines and polygons to create the pumpkin and the background. I made it so the pumpkin face changes color when you click on it to make it look like there is a candle inside.
 
 ## Technical Achievement
-I added so that when you click on the pumpkin the face changes color to make it light up.
+I added an interaction so that when you click on the pumpkin, the face changes to bright yellow to make it look like it is lighting up.
 
 ## Design Achievement
-I created this visualization with the shapes to create a Halloween jack-o-lantern. I made the pumpkin face change to a bright yellow to create an effect of a candle inside.
+I created this Halloween jack-o-lantern using basic shapes. I made the pumpkin's face change to a bright yellow to make it seem like it is lighting up.
 
 ## Sources
-D3 graph galary:
+D3 graph gallery:
 https://d3-graph-gallery.com/graph/shape.html
 
 ## GitHub Pages url
