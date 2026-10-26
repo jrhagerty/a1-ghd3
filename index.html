@@ -27,7 +27,7 @@
     // Ground
     svg.append("rect")
       .attr("x", 0)
-      .attr("y", 440)
+      .attr("y", 450)
       .attr("width", 960)
       .attr("height", 100)
       .attr("fill", "#4a3204");
@@ -50,14 +50,14 @@
     
     // Left
     svg.append("circle")
-      .attr("cx", 420)
+      .attr("cx", 430)
       .attr("cy", 300)
       .attr("r", 170)
       .attr("fill", "#db771f");
 
     // Right
     svg.append("circle")
-      .attr("cx", 540)
+      .attr("cx", 530)
       .attr("cy", 300)
       .attr("r", 170)
       .attr("fill", "#db771f");
@@ -74,6 +74,7 @@
     
     // Mouth
     svg.append("line")
+      .attr("class", "mouth")
       .attr("x1", 350)
       .attr("y1", 370)
       .attr("x2", 610)
@@ -89,16 +90,29 @@
     
     // Left eye
     svg.append("polygon")
+      .attr("class", "face")
       .attr("points", "340, 270 390, 190 450, 270")
       
 
     // Right eye
     svg.append("polygon")
+      .attr("class", "face")
       .attr("points", "510, 270 570, 190 620, 270")
     
     // Nose
     svg.append("polygon")
+      .attr("class", "face")
       .attr("points", "480, 280 510, 340 450, 340")
+
+    let lit = false;
+    svg.on("click", function() {
+      lit = !lit;
+      d3.selectAll(".face")
+        .attr("fill", lit ? "#ebc634" : "black");
+
+      d3.selectAll(".mouth")
+        .attr("stroke", lit ? "#ebc634" : "black");
+    });
 
   </script>
 </body>
