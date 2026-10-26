@@ -34,9 +34,9 @@
 
     // Stem
     svg.append("rect")
-      .attr("x", 450)
+      .attr("x", 455)
       .attr("y", 100)
-      .attr("width", 60)
+      .attr("width", 50)
       .attr("height", 90)
       .attr("fill", "#030d01");
 
@@ -67,7 +67,7 @@
     svg.append("line")
       .attr("x1", 500)
       .attr("y1", 120)
-      .attr("x2", 580)
+      .attr("x2", 540)
       .attr("y2", 90)
       .attr("stroke", "green")
       .attr("stroke-width", 6);
@@ -76,33 +76,33 @@
     svg.append("line")
       .attr("class", "mouth")
       .attr("x1", 350)
-      .attr("y1", 370)
+      .attr("y1", 390)
       .attr("x2", 610)
-      .attr("y2", 370)
+      .attr("y2", 390)
       .attr("stroke", "black")
-      .attr("stroke-width", 12);
+      .attr("stroke-width", 18);
 
     // Add Polygons
     // Leaf
     svg.append("polygon")
-      .attr("points", "550, 80 600, 80 600, 100")
+      .attr("points", "520, 90 550, 70 580, 90 550, 110")
       .attr("fill", "green");
     
     // Left eye
     svg.append("polygon")
       .attr("class", "face")
-      .attr("points", "340, 270 390, 190 450, 270")
+      .attr("points", "340, 270 400, 180 460, 270")
       
 
     // Right eye
     svg.append("polygon")
       .attr("class", "face")
-      .attr("points", "510, 270 570, 190 620, 270")
+      .attr("points", "500, 270 560, 180 620, 270")
     
     // Nose
     svg.append("polygon")
       .attr("class", "face")
-      .attr("points", "480, 280 510, 340 450, 340")
+      .attr("points", "480, 250 510, 360 450, 360")
 
     let lit = false;
     svg.on("click", function() {
