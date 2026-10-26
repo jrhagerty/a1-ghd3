@@ -12,3 +12,6 @@ I created this visualization with the shapes to create a Halloween jack-o-lanter
 ## Sources
 D3 graph galary:
 https://d3-graph-gallery.com/graph/shape.html
+
+## GitHub Pages url
+https://jrhagerty.github.io/a1-ghd3/
